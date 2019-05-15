@@ -1,0 +1,21 @@
+{
+  "name": "rabbitMQ_heroku",
+  "scripts": {
+    "postdeploy": "echo deploy done !!!!"
+  },
+  "env": {
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [ {
+    "plan": "cloudamqp:lemur"
+  }],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
