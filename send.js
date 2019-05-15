@@ -3,7 +3,7 @@
 var amqp = require('amqplib/callback_api');
 
 // 'amqp://localhost'  --> localhost
-var url = process.env.CLOUDAMQP_URL || "amqp://xtnkzpjg:PO_AGtxCluGJ0WZ9fnDOd67JEXnhc92o@baboon.rmq.cloudamqp.com/xtnkzpjg";
+var url = process.env.CLOUDAMQP_URL || "amqp://dgehgift:JdCkNe4lLzETgCYCbEpvXvSWRBU2Twzt@termite.rmq.cloudamqp.com/dgehgift";
 
 
 amqp.connect(url, function(error0, connection) {
