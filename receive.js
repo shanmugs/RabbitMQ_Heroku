@@ -21,10 +21,10 @@ amqp.connect(url, function(error0, connection) {
             durable: false
         });
 
-        console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
+        console.log(" [*] Hello Boss !! I am Waiting for messages in %s. To exit press CTRL+C", queue);
 
         channel.consume(queue, function(msg) {
-            console.log(" [x] Received %s", msg.content.toString());
+            console.log(" [x] Received Dyno %s", msg.content.toString());
         }, {
             noAck: false
         });
